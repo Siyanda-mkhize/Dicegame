@@ -6,12 +6,13 @@ This assignment requires an agent be written that can play a variant of dice gam
 
 The game has the following rules: 
 
-1) Start with 0 points 
-2) Roll three six-sided dice 
-3) Choose one of the following: 
-	3.1) Stick, accept the values shown. If two or more dice show the same values, then all of them are flipped 	
+- Start with 0 points 
+- Roll three six-sided dice 
+- Choose one of the following: 
+	 - Stick, accept the values shown. If two or more dice show the same values, then all of them are flipped 	
 	     upside down. 1 becomes 6, 2 becomes 5, 3 becomes 4, and vice versa. The total is then added to your points and this is your final score. 
-        3.2) Or reroll the dice. Any dice can be held and not rerolled, rerolling incurs a penalty of -1. The max score achievable is 18 however the final score can be 
+	     
+	 - Or reroll the dice. Any dice can be held and not rerolled, rerolling incurs a penalty of -1. The max score achievable is 18 however the final score can be 
              negative. 
 
 Two simple agents are provided as examples, which do not perform well. 
@@ -27,7 +28,11 @@ To achieve the objectives of this assignment a one step look ahead function was 
 
 value iteration is implemented as the main function. The Bellman equation is the basis of the value iteration algorithm and this is evident as the helper function forms an integral part of the value iteration by computing the action values. Once this is done it becomes possible to select the best action to perform based on the highest state-action value. The delta and V are updated and this loop ends once there is convergence. The optimal policy goes through a similar process however it for loops through the game.states and actions. 
 
-The discount rate/gamma is set to one in order to put emphasis on the long-term and maximise rewards. Theta is set to 0.1 in order to increase the average time since lower values only increased the average time. 
+The discount rate/gamma is set to one in order to put emphasis on the long-term and maximise rewards. Theta is set to 0.1 in order to increase the average time since lower values only increased the average time.  
+
+Langauges: 
+
+![This is an image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
 
 Reference 
 
